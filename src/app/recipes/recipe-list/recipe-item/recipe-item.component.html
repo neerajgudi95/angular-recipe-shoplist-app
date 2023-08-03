@@ -1,0 +1,24 @@
+<div class="row">
+  <ul class="col-xs-12 m-4">
+    <a
+      class="list-group-item clearfix"
+      [routerLink]="[recipeItem.id]"
+      routerLinkActive="list-group-item-info"
+    >
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ recipeItem.name }}</h4>
+        <p class="list-group-item-text">
+          {{ recipeItem.description.slice(0, 30) }}...
+        </p>
+      </div>
+      <span class="pull-right">
+        <img
+          [src]="recipeItem.imagePath"
+          alt="pasta"
+          class="img-responsive img-rounded"
+          style="max-height: 100px"
+        />
+      </span>
+    </a>
+  </ul>
+</div>
