@@ -5,10 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  route: string = 'recipe';
-
-  onRouteSelect(routeSelected: string) {
-    this.route = routeSelected;
-  }
-}
+export class AppComponent {}
